@@ -4,7 +4,6 @@ const blogRouter = require('./blogRouter');
 const app = express();
 
 app.use(morgan('common'));
-
 app.use('/blog-posts', blogRouter);
 
 app.listen(process.env.PORT || 8080, () => {

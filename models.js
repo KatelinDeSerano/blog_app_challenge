@@ -9,7 +9,6 @@ const uuid = require('uuid');
 // Our concern in this example is with how the API layer
 // is implemented, and getting it to use an existing model.
 
-
 function StorageException(message) {
    this.message = message;
    this.name = "StorageException";
@@ -65,6 +64,5 @@ function createBlogPostsModel() {
   storage.posts = [];
   return storage;
 }
-
 
 module.exports = {BlogPosts: createBlogPostsModel()};
