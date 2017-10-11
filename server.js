@@ -1,6 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-const blogPostsRouter = require('./blogRouter');
+const blogRouter = require('./blogRouter');
 const app = express();
 
 app.use(morgan('common'));
