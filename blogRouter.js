@@ -57,7 +57,14 @@ router.get('/', (req, res) => {
     });
     res.status(204).end();
   });
+
+  router.delete('/:id', (req, res) => {
+    BlogPosts.delete(req.params.id);
+    console.log(`Deleted blog post with id \`${req.params.ID}\``);
+    res.status(204).end();
+  });
   
+  module.exports = router;
 
 
 
